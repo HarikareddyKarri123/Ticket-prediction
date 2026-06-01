@@ -1095,7 +1095,7 @@ def page_raise_ticket() -> None:
     with st.container(border=True):
         dc1, dc2 = st.columns(2, gap="medium")
         with dc1:
-            st.markdown('<p class="field-label">📅 Deadline Date</p>', unsafe_allow_html=True)
+            st.markdown('<div style="margin-bottom:8px;font-weight:600;">📅 Deadline Date</p>', unsafe_allow_html=True)
             dl_date = st.date_input(
                 "Select Date",
                 value=None,
