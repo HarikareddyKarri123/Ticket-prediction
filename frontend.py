@@ -20,7 +20,7 @@ BG = "#F7F9FC"
 CARD = "#FFFFFF"
 TEXT = "#0F172A"
 
-API_BASE = "http://127.0.0.1:5000"
+API_BASE = "https://ticket-prediction.onrender.com"
 API_URL = f"{API_BASE}/predict"
 REQUEST_TIMEOUT = 30
 
