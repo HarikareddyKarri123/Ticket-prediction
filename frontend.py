@@ -468,10 +468,10 @@ div[data-testid="stVerticalBlock"]:first-child {{
                 box-shadow: 0 2px 8px rgba(3,47,87,0.04);
                 transition: border-color 0.25s, box-shadow 0.25s;
             }}*/
-            div[data-testid="stVerticalBlockBorderWrapper"]:hover {{
+            /*div[data-testid="stVerticalBlockBorderWrapper"]:hover {{
                 border-color: {YELLOW} !important;
                 box-shadow: 0 4px 14px rgba(255,196,0,0.12);
-            }}
+            }}*/
 
             /* Sidebar toggle button */
             div[data-testid="stSidebar"] div[data-testid="stButton"] button.sidebar-toggle-btn {{
