@@ -299,8 +299,8 @@ div[data-testid="stVerticalBlock"]:first-child {{
                 margin: 0.75rem 0 0.5rem;
             }}
             .field-label {{
-                font-size: 0.88rem; font-weight: 600; color: {t["text"]};
-                margin: 0.25rem 0 0.35rem;
+                display: block;
+                margin-bottom: 8px;
             }}
 
             /* KPI */
@@ -471,7 +471,7 @@ div[data-testid="stVerticalBlock"]:first-child {{
             /*div[data-testid="stVerticalBlockBorderWrapper"]:hover {{
                 border-color: {YELLOW} !important;
                 box-shadow: 0 4px 14px rgba(255,196,0,0.12);
-            }}*/
+            }}
 
             /* Sidebar toggle button */
             div[data-testid="stSidebar"] div[data-testid="stButton"] button.sidebar-toggle-btn {{
@@ -1095,7 +1095,7 @@ def page_raise_ticket() -> None:
     with st.container(border=True):
         dc1, dc2 = st.columns(2, gap="medium")
         with dc1:
-            st.markdown('<div style="margin-bottom:8px;font-weight:600;">📅 Deadline Date</p>', unsafe_allow_html=True)
+            st.markdown('<p class="field-label">📅 Deadline Date</p>', unsafe_allow_html=True)
             dl_date = st.date_input(
                 "Select Date",
                 value=None,
