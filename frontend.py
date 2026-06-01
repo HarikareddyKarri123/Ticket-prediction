@@ -1097,9 +1097,10 @@ def page_raise_ticket() -> None:
         with dc1:
             st.markdown('<p class="field-label">📅 Deadline Date</p>', unsafe_allow_html=True)
             dl_date = st.date_input(
-                "📅 Deadline Date",
+                "Select Date",
                 value=None,
                 min_value=date.today(),
+                label_visibility="collapsed",
                 key="deadline_date",
             )
         with dc2:
