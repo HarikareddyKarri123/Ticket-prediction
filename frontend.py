@@ -1159,7 +1159,7 @@ with st.container(border=True):
                 }
                 st.session_state.show_success = True
 
-    if st.session_state.prediction_error:
+    if st.session_state.get("prediction_error"):
         st.error(st.session_state.prediction_error)
 
     if st.session_state.show_success and st.session_state.latest_prediction:
