@@ -295,8 +295,12 @@ div[data-testid="stVerticalBlock"]:first-child {{
                 font-size: 0.88rem; color: {t["muted"]}; margin: 0 0 1rem;
             }}
             .section-label {{
-                font-size: 0.92rem; font-weight: 700; color: {t["heading"]};
-                margin: 0.75rem 0 0.5rem;
+                display: block;
+                margin-bottom: 12px;
+                margin-top: 16px;
+                font-size: 1rem;
+                font-weight: 700;
+                clear: both;
             }}
             .field-label {{
                 display: block;
@@ -1090,28 +1094,13 @@ def page_raise_ticket() -> None:
         key="ticket_description",
     )
 
-    st.markdown('<p class="section-label fade-in">Deadline (Optional)</p>', unsafe_allow_html=True)
+    st.markdown(
+    '<p class="section-label fade-in">Deadline (Optional)</p>',
+    unsafe_allow_html=True
+)
 
-    with st.container(border=True):
-        dc1, dc2 = st.columns(2, gap="medium")
-        with dc1:
-            st.markdown('<p class="field-label">📅 Deadline Date</p>', unsafe_allow_html=True)
-            dl_date = st.date_input(
-                "Select Date",
-                value=None,
-                min_value=date.today(),
-                label_visibility="collapsed",
-                key="deadline_date",
-            )
-        with dc2:
-            st.markdown('<p class="field-label">🕒 Deadline Time (24h)</p>', unsafe_allow_html=True)
-            dl_time_str = st.text_input(
-                "Select Time",
-                placeholder="14:30",
-                help="24-hour format only — e.g. 09:00, 14:30, 18:00. Leave blank if not needed.",
-                label_visibility="collapsed",
-                key="deadline_time",
-            )
+with st.container(border=True):
+    dc1, dc2 = st.columns(2)
 
     submitted = st.button("Submit Ticket", use_container_width=True, type="primary", key="submit_ticket")
 
