@@ -459,7 +459,7 @@ div[data-testid="stVerticalBlock"]:first-child {{
             }}
 
             /* Deadline section */
-            div[data-testid="stVerticalBlockBorderWrapper"] {{
+           /* div[data-testid="stVerticalBlockBorderWrapper"] {{
                 background: {t["card"]} !important;
                 border: 1px solid {t["border"]} !important;
                 border-radius: 12px !important;
@@ -467,7 +467,7 @@ div[data-testid="stVerticalBlock"]:first-child {{
                 margin-bottom: 0.75rem !important;
                 box-shadow: 0 2px 8px rgba(3,47,87,0.04);
                 transition: border-color 0.25s, box-shadow 0.25s;
-            }}
+            }}*/
             div[data-testid="stVerticalBlockBorderWrapper"]:hover {{
                 border-color: {YELLOW} !important;
                 box-shadow: 0 4px 14px rgba(255,196,0,0.12);
