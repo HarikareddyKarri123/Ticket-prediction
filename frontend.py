@@ -112,9 +112,12 @@ section[data-testid="stSidebar"] {
     display: flex !important;
     visibility: visible !important;
     position: fixed !important;
-    left: 12px !important;
-    top: 12px !important;
-    z-index: 999999 !important;
+    left: 16px !important;
+    top: 70px !important;
+    z-index: 9999999 !important;
+    background: #0B2E4F !important;
+    border-radius: 8px !important;
+    padding: 6px !important;
 }
 """
 
