@@ -104,27 +104,28 @@ def inject_styles(sidebar_open: bool = True, dark_mode: bool = False) -> None:
     sidebar_css = ""
     if not sidebar_open:
         sidebar_css = """
-            section[data-testid="stSidebar"] {
-                transform: translateX(-110%) !important;
-                opacity: 0 !important;
-                pointer-events: none !important;
-                min-width: 0 !important;
-                max-width: 0 !important;
-                width: 0 !important;
-            }
-            section[data-testid="stSidebar"] > div {
-                display: none !important;
-            }
-            [data-testid="stAppViewContainer"] {
-                margin-left: 0 !important;
-                padding-left: 1rem !important;
-            }
-            [data-testid="stSidebarCollapsedControl"] {
-    display: flex !important;
-    visibility: visible !important;
-    z-index: 999999 !important;
-}
-        """
+    section[data-testid="stSidebar"] {
+        transform: translateX(-110%) !important;
+        opacity: 0 !important;
+        min-width: 0 !important;
+        max-width: 0 !important;
+        width: 0 !important;
+    }
+
+    [data-testid="stAppViewContainer"] {
+        margin-left: 0 !important;
+        padding-left: 1rem !important;
+    }
+
+    [data-testid="stSidebarCollapsedControl"] {
+        display: flex !important;
+        visibility: visible !important;
+        position: fixed !important;
+        left: 0.75rem !important;
+        top: 1rem !important;
+        z-index: 999999 !important;
+    }
+"""
 
     st.markdown(
         f"""
