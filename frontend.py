@@ -202,7 +202,15 @@ section[data-testid="stSidebar"] {
                 border-left: 3px solid {YELLOW} !important; font-weight: 700 !important;
             }}
 
-            .block-container {{ max-width: 1160px; padding-top: 0.75rem; padding-bottom: 2rem; }}
+           .block-container {{
+    max-width: 1160px;
+    padding-top: 0rem !important;
+    padding-bottom: 2rem;
+}}
+
+div[data-testid="stVerticalBlock"]:first-child {{
+    margin-top: -1.5rem !important;
+}}
 
             /* Logo */
             .pt-logo {{ display: flex; align-items: center; gap: 0.7rem; padding: 1.5rem 1rem 1rem; }}
