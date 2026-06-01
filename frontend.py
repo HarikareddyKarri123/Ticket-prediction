@@ -1090,12 +1090,12 @@ def page_raise_ticket() -> None:
         key="ticket_description",
     )
 
-    st.markdown('<p class="section-label fade-in">Deadline (Optional)</p>', unsafe_allow_html=True)
+    st.markdown('<p class="section-label fade-in"> </p>', unsafe_allow_html=True)
 
     with st.container(border=True):
         dc1, dc2 = st.columns(2, gap="medium")
         with dc1:
-            st.markdown('<p class="field-label">📅 Deadline Date</p>', unsafe_allow_html=True)
+            st.markdown('<p class="field-label">📅 Deadline Date (Optional)</p>', unsafe_allow_html=True)
             dl_date = st.date_input(
                 "Select Date",
                 value=None,
