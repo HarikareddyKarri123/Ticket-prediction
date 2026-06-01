@@ -129,6 +129,17 @@ section[data-testid="stSidebar"] {
             .stApp {{ background: {t["bg"]}; }}
             [data-testid="stAppViewContainer"] {{ background: {t["bg"]}; }}
             #MainMenu, footer {{ visibility: hidden; height: 0; }}
+            header[data-testid="stHeader"] {{
+    display: none !important;
+}}
+
+[data-testid="stToolbar"] {{
+    display: none !important;
+}}
+
+[data-testid="stDecoration"] {{
+    display: none !important;
+}}
 
             {sidebar_css}
 
