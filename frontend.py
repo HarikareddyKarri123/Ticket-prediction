@@ -120,8 +120,10 @@ def inject_styles(sidebar_open: bool = True, dark_mode: bool = False) -> None:
                 padding-left: 1rem !important;
             }
             [data-testid="stSidebarCollapsedControl"] {
-                display: none !important;
-            }
+    display: flex !important;
+    visibility: visible !important;
+    z-index: 999999 !important;
+}
         """
 
     st.markdown(
